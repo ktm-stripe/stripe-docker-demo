@@ -1,0 +1,21 @@
+{
+  "configurations": [
+  {
+    "name": "Debug server",
+    "type": "rdbg",
+    "request": "launch",
+    "cwd": "${workspaceFolder}",
+    "command": "ruby",
+    "useBundler": true,
+    "script": "${workspaceFolder}/main.rb",
+    "pathToBundler": "/usr/local/bundle/bin/bundle",
+    "rdbgPath": "/usr/local/bundle/bin/rdbg",
+    "args": [
+      "-o",
+      "'0.0.0.0'",
+      "-p",
+      "4567",
+    ],
+  },
+  ]
+}

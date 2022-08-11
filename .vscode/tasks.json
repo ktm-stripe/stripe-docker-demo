@@ -1,0 +1,18 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "start Stripe Webhook forwarding",
+      "type": "shell",
+      "command": "stripe",
+      "args": [
+        "listen",
+        "--forward-to",
+        "localhost:4567/webhook"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

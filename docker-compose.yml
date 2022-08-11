@@ -1,0 +1,8 @@
+services:
+  server:
+    build: .
+    command: bundle exec ruby main.rb
+    ports:
+      - 4567:4567
+    environment:
+      - APPLICATION_ENVIRONMENT=production
