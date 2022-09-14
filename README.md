@@ -25,7 +25,7 @@ STRIPE_SECRET_KEY=sk_test...
 STRIPE_WEBHOOK_SECRET=whsec_...
 
 # Path to front-end implementation. Note: PHP has it's own front end implementation.
-STATIC_DIR=../../client/html
+STATIC_DIR=./client/build
 DOMAIN=http://localhost:4242
 ```
 

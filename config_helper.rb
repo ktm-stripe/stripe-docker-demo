@@ -79,12 +79,12 @@ class ConfigHelper
 
     if static_dir == ''
       puts <<~DOC
-        Would you like to use the default STATIC_DIR=../../client/html? [Y/n]
+        Would you like to use the default STATIC_DIR=./client/build? [Y/n]
       DOC
 
       c = gets.chomp
       if c.upcase != "N"
-        set_dotenv!('STATIC_DIR', '../../client/html')
+        set_dotenv!('STATIC_DIR', './client/build')
       end
     end
 
@@ -99,8 +99,8 @@ class ConfigHelper
       if static_dir == ''
         puts <<~DOC
           No value set for STATIC_DIR. If this sample was installed with the
-          Stripe CLI then STATIC_DIR is usually `../client`. If this sample was
-          git cloned, STATIC_DIR is typically set to `../../client`.
+          Stripe CLI then STATIC_DIR is usually `./client`. If this sample was
+          git cloned, STATIC_DIR is typically set to `./client`.
         DOC
       else
         puts <<~DOC
@@ -238,7 +238,7 @@ class ConfigHelper
         puts "After creating `.env`, please restart the server and try again."
         exit
       else
-        set_dotenv!('STATIC_DIR', './client/html')
+        set_dotenv!('STATIC_DIR', './client/build')
         puts "\n-------\n\n"
       end
     end
