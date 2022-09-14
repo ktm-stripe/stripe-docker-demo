@@ -7,14 +7,14 @@
     "cwd": "${workspaceFolder}",
     "command": "ruby",
     "useBundler": true,
-    "script": "${workspaceFolder}/main.rb",
+    "script": "${workspaceFolder}/server.rb",
     "pathToBundler": "/usr/local/bundle/bin/bundle",
     "rdbgPath": "/usr/local/bundle/bin/rdbg",
     "args": [
       "-o",
       "'0.0.0.0'",
       "-p",
-      "4567",
+      "4242",
     ],
   },
   ]

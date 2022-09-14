@@ -1,6 +1,6 @@
 FROM ruby:3.1
 
-EXPOSE 4567
+EXPOSE 4242
 
 WORKDIR /workspace
 
