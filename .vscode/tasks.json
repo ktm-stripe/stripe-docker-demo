@@ -13,6 +13,14 @@
         "localhost:4567/webhook"
       ],
       "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "path": "client",
+      "problemMatcher": [],
+      "label": "Start React Development Server",
+      "detail": "react-scripts start"
     }
   ]
 }
