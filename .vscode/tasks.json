@@ -21,6 +21,15 @@
       "problemMatcher": [],
       "label": "Start React Development Server",
       "detail": "react-scripts start"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "path": "client",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "npm: build - client",
+      "detail": "react-scripts build"
     }
   ]
 }
