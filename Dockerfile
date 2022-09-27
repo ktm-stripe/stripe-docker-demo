@@ -18,4 +18,4 @@ RUN ["npm", "install", "--prefix", "/workspace/client"]
 
 COPY . /workspace/
 
-CMD ["ruby", "main.rb"]
+CMD ["ruby", "server.rb"]
